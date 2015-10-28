@@ -40,12 +40,12 @@
     [self downloadUserInfo];
     [self downloadUserPosts];
     
-    UISwipeGestureRecognizer *swipeRight = [[UISwipeGestureRecognizer alloc] initWithTarget:self action:@selector(didSwipeRight)];
+    UISwipeGestureRecognizer *swipeRight = [[UISwipeGestureRecognizer alloc] initWithTarget:self action:@selector(changeToLargeGalleryView)];
     swipeRight.numberOfTouchesRequired = 1;
     [swipeRight setDirection:UISwipeGestureRecognizerDirectionRight];
     [self.collectionView addGestureRecognizer:swipeRight];
     
-    UISwipeGestureRecognizer *swipeLeft = [[UISwipeGestureRecognizer alloc] initWithTarget:self action:@selector(didSwipeLeft)];
+    UISwipeGestureRecognizer *swipeLeft = [[UISwipeGestureRecognizer alloc] initWithTarget:self action:@selector(changeToSmallGalleryView)];
     swipeLeft.numberOfTouchesRequired = 1;
     [swipeLeft setDirection:UISwipeGestureRecognizerDirectionLeft];
     [self.collectionView addGestureRecognizer:swipeLeft];

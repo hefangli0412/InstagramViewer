@@ -20,7 +20,6 @@
 		CDD1DEF31BDEC96300E95FAF /* HFSmallGalleryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CDD1DEF21BDEC96300E95FAF /* HFSmallGalleryViewController.m */; };
 		CDD1DEFD1BDED12500E95FAF /* HFAccountAuthorization.m in Sources */ = {isa = PBXBuildFile; fileRef = CDD1DEFC1BDED12500E95FAF /* HFAccountAuthorization.m */; };
 		CDD1DF001BDED14600E95FAF /* HFPhotoController.m in Sources */ = {isa = PBXBuildFile; fileRef = CDD1DEFF1BDED14600E95FAF /* HFPhotoController.m */; };
-		CDD1DF051BDED23700E95FAF /* HFConstants.h in Sources */ = {isa = PBXBuildFile; fileRef = CDD1DF041BDED23700E95FAF /* HFConstants.h */; };
 		CDD1DF3A1BDF033800E95FAF /* HFSmallGalleryLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = CDD1DF391BDF033800E95FAF /* HFSmallGalleryLayout.m */; };
 		CDD1DF3D1BDF094700E95FAF /* HFSmallImageCell.m in Sources */ = {isa = PBXBuildFile; fileRef = CDD1DF3C1BDF094700E95FAF /* HFSmallImageCell.m */; };
 		CDD1DF401BDF151C00E95FAF /* HFProfileViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CDD1DF3F1BDF151C00E95FAF /* HFProfileViewController.m */; };
@@ -457,7 +456,6 @@
 				CDD1DEED1BDEC5D900E95FAF /* HFRootTabViewController.m in Sources */,
 				CDD1DEF31BDEC96300E95FAF /* HFSmallGalleryViewController.m in Sources */,
 				CDD1DF001BDED14600E95FAF /* HFPhotoController.m in Sources */,
-				CDD1DF051BDED23700E95FAF /* HFConstants.h in Sources */,
 				CDD1DF3D1BDF094700E95FAF /* HFSmallImageCell.m in Sources */,
 				CDD1DF451BDF1B9100E95FAF /* HFProfileSmallImageLayout.m in Sources */,
 				CDD1DF3A1BDF033800E95FAF /* HFSmallGalleryLayout.m in Sources */,

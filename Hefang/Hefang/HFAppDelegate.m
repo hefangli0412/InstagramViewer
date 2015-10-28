@@ -25,8 +25,12 @@
         @"client_id" : InstagramClientId,
         SimpleAuthRedirectURIKey : InstagramRedirectURIKey
     };
+    
     self.firstTime = YES;
+    
     [self.window setTintColor:[UIColor darkGrayColor]];
+    [application setStatusBarHidden:NO];
+    [application setStatusBarStyle:UIStatusBarStyleLightContent];
     
     return YES;
 }
