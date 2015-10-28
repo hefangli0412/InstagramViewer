@@ -24,6 +24,7 @@
 @property (nonatomic, strong) HFProfileSmallImageLayout *smallLayout;
 @property (nonatomic, strong) UIView *whitepage;
 @property (nonatomic) BOOL hasConnectionError;
+@property (nonatomic, weak) UISegmentedControl *segControl;
 @end
 
 @implementation HFProfileViewController
@@ -65,9 +66,12 @@
 
 - (void)changeToLargeGalleryView {
     NSLog(@"swipe right - larger photos");
+    
+    self.isLarge = YES;
+    self.segControl.selectedSegmentIndex = 1;
+    
     __weak typeof(self) weakSelf = self;
     [self.collectionView setCollectionViewLayout:self.largeLayout animated:YES completion:^(BOOL finished) {
-        weakSelf.isLarge = YES;
         dispatch_async(dispatch_get_main_queue(), ^ {
             [weakSelf.collectionView performBatchUpdates:^{
                 [weakSelf.collectionView reloadSections:[NSIndexSet indexSetWithIndex:0]];
@@ -78,13 +82,11 @@
 
 - (void)changeToSmallGalleryView {
     NSLog(@"swipe left - smaller photos");
-    __weak typeof(self) weakSelf = self;
-    [self.collectionView performBatchUpdates:^{
-        [self.collectionView setCollectionViewLayout:self.smallLayout animated:YES completion:^(BOOL finished) {
-            weakSelf.isLarge = NO;
-        }];
-    } completion:^(BOOL finished) {}];
     
+    self.isLarge = NO;
+    self.segControl.selectedSegmentIndex = 0;
+
+    [self.collectionView setCollectionViewLayout:self.smallLayout animated:YES completion:^(BOOL finished) {}];
 }
 
 - (void)setImageForCell:(HFChangableImageCell*)cell post:(NSDictionary*)post resolution:(HFImageResolution)resolution {
@@ -167,9 +169,13 @@
 
 - (IBAction)segmentedControlClicked:(UISegmentedControl *)sender {
     if (sender.selectedSegmentIndex == 0) {
-        [self changeToSmallGalleryView];
+        if (self.isLarge) {
+            [self changeToSmallGalleryView];
+        }
     } else {
-        [self changeToLargeGalleryView];
+        if (!self.isLarge) {
+            [self changeToLargeGalleryView];
+        }
     }
 }
 
@@ -213,6 +219,8 @@
 - (UICollectionReusableView *)collectionView:(UICollectionView *)collectionView viewForSupplementaryElementOfKind:(NSString *)kind atIndexPath:(NSIndexPath *)indexPath {
     HFProfileHeaderView *headerView = [collectionView dequeueReusableSupplementaryViewOfKind:UICollectionElementKindSectionHeader withReuseIdentifier:kProfileHeaderCellIdentifier forIndexPath:indexPath];
     
+    self.segControl = headerView.segmentedControl;
+    
     [self addBorderToLabel:headerView.postsCount];
     [self addBorderToLabel:headerView.followersCount];
     [self addBorderToLabel:headerView.followingCount];
@@ -223,7 +231,7 @@
         // paragraph style
         NSMutableParagraphStyle *paragraphStyle = [[NSMutableParagraphStyle alloc] init];
         paragraphStyle.alignment = NSTextAlignmentCenter;
-        paragraphStyle.lineSpacing = 7.0f;
+        paragraphStyle.lineSpacing = 4.0f;
         
         // larger font
         UIFont *largerFont = [UIFont fontWithName:@"Helvetica" size:22.0f];
