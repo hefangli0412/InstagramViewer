@@ -1,0 +1,719 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		152F03057176BD31D354AB0A /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D21ADD54FDD44F658D888E6 /* libPods.a */; };
+		CD31B1801BDEAB8000DA42EB /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = CD31B17F1BDEAB8000DA42EB /* main.m */; };
+		CD31B1831BDEAB8000DA42EB /* HFAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = CD31B1821BDEAB8000DA42EB /* HFAppDelegate.m */; };
+		CD31B1891BDEAB8000DA42EB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CD31B1871BDEAB8000DA42EB /* Main.storyboard */; };
+		CD31B18B1BDEAB8000DA42EB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CD31B18A1BDEAB8000DA42EB /* Assets.xcassets */; };
+		CD31B18E1BDEAB8000DA42EB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CD31B18C1BDEAB8000DA42EB /* LaunchScreen.storyboard */; };
+		CD31B1991BDEAB8000DA42EB /* HefangTests.m in Sources */ = {isa = PBXBuildFile; fileRef = CD31B1981BDEAB8000DA42EB /* HefangTests.m */; };
+		CD31B1A41BDEAB8000DA42EB /* HefangUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = CD31B1A31BDEAB8000DA42EB /* HefangUITests.m */; };
+		CD31B1B81BDEB89500DA42EB /* HFLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CD31B1B71BDEB89500DA42EB /* HFLoginViewController.m */; };
+		CDD1DEED1BDEC5D900E95FAF /* HFRootTabViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CDD1DEEC1BDEC5D900E95FAF /* HFRootTabViewController.m */; };
+		CDD1DEF31BDEC96300E95FAF /* HFSmallGalleryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CDD1DEF21BDEC96300E95FAF /* HFSmallGalleryViewController.m */; };
+		CDD1DEFD1BDED12500E95FAF /* HFAccountAuthorization.m in Sources */ = {isa = PBXBuildFile; fileRef = CDD1DEFC1BDED12500E95FAF /* HFAccountAuthorization.m */; };
+		CDD1DF001BDED14600E95FAF /* HFPhotoController.m in Sources */ = {isa = PBXBuildFile; fileRef = CDD1DEFF1BDED14600E95FAF /* HFPhotoController.m */; };
+		CDD1DF051BDED23700E95FAF /* HFConstants.h in Sources */ = {isa = PBXBuildFile; fileRef = CDD1DF041BDED23700E95FAF /* HFConstants.h */; };
+		CDD1DF3A1BDF033800E95FAF /* HFSmallGalleryLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = CDD1DF391BDF033800E95FAF /* HFSmallGalleryLayout.m */; };
+		CDD1DF3D1BDF094700E95FAF /* HFSmallImageCell.m in Sources */ = {isa = PBXBuildFile; fileRef = CDD1DF3C1BDF094700E95FAF /* HFSmallImageCell.m */; };
+		CDD1DF401BDF151C00E95FAF /* HFProfileViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CDD1DF3F1BDF151C00E95FAF /* HFProfileViewController.m */; };
+		CDD1DF451BDF1B9100E95FAF /* HFProfileSmallImageLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = CDD1DF441BDF1B9100E95FAF /* HFProfileSmallImageLayout.m */; };
+		CDD1DF481BDF240300E95FAF /* HFProfileHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = CDD1DF471BDF240300E95FAF /* HFProfileHeaderView.m */; };
+		CDD1DF4E1BDF731100E95FAF /* HFLargeGalleryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CDD1DF4D1BDF731100E95FAF /* HFLargeGalleryViewController.m */; };
+		CDD1DF511BDF74D100E95FAF /* HFLargeImageCell.m in Sources */ = {isa = PBXBuildFile; fileRef = CDD1DF501BDF74D100E95FAF /* HFLargeImageCell.m */; };
+		CDD1DF541BDF75CF00E95FAF /* HFLargeGalleryLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = CDD1DF531BDF75CF00E95FAF /* HFLargeGalleryLayout.m */; };
+		CDD1DF571BDF924B00E95FAF /* HFProfileLargeImageLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = CDD1DF561BDF924B00E95FAF /* HFProfileLargeImageLayout.m */; };
+		CDD1DF5A1BE077AE00E95FAF /* HFChangableImageCell.m in Sources */ = {isa = PBXBuildFile; fileRef = CDD1DF591BE077AE00E95FAF /* HFChangableImageCell.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		CD31B1951BDEAB8000DA42EB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CD31B1731BDEAB7F00DA42EB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CD31B17A1BDEAB7F00DA42EB;
+			remoteInfo = Hefang;
+		};
+		CD31B1A01BDEAB8000DA42EB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CD31B1731BDEAB7F00DA42EB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CD31B17A1BDEAB7F00DA42EB;
+			remoteInfo = Hefang;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		19518A68231A3E7795D857A6 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
+		1D21ADD54FDD44F658D888E6 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		80E2A5B70CEBB880EE8AFE2A /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
+		CD31B17B1BDEAB7F00DA42EB /* Hefang.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Hefang.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		CD31B17F1BDEAB8000DA42EB /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		CD31B1811BDEAB8000DA42EB /* HFAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HFAppDelegate.h; sourceTree = "<group>"; };
+		CD31B1821BDEAB8000DA42EB /* HFAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HFAppDelegate.m; sourceTree = "<group>"; };
+		CD31B1881BDEAB8000DA42EB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		CD31B18A1BDEAB8000DA42EB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = Hefang/Assets.xcassets; sourceTree = SOURCE_ROOT; };
+		CD31B18D1BDEAB8000DA42EB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		CD31B18F1BDEAB8000DA42EB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CD31B1941BDEAB8000DA42EB /* HefangTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HefangTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		CD31B1981BDEAB8000DA42EB /* HefangTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HefangTests.m; sourceTree = "<group>"; };
+		CD31B19A1BDEAB8000DA42EB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CD31B19F1BDEAB8000DA42EB /* HefangUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HefangUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		CD31B1A31BDEAB8000DA42EB /* HefangUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HefangUITests.m; sourceTree = "<group>"; };
+		CD31B1A51BDEAB8000DA42EB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CD31B1B11BDEB58600DA42EB /* Podfile */ = {isa = PBXFileReference; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		CD31B1B61BDEB89500DA42EB /* HFLoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = HFLoginViewController.h; path = Hefang/Controllers/HFLoginViewController.h; sourceTree = "<group>"; };
+		CD31B1B71BDEB89500DA42EB /* HFLoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = HFLoginViewController.m; path = Hefang/Controllers/HFLoginViewController.m; sourceTree = "<group>"; };
+		CDD1DEEB1BDEC5D900E95FAF /* HFRootTabViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = HFRootTabViewController.h; path = Hefang/Controllers/HFRootTabViewController.h; sourceTree = "<group>"; };
+		CDD1DEEC1BDEC5D900E95FAF /* HFRootTabViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = HFRootTabViewController.m; path = Hefang/Controllers/HFRootTabViewController.m; sourceTree = "<group>"; };
+		CDD1DEF11BDEC96300E95FAF /* HFSmallGalleryViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = HFSmallGalleryViewController.h; path = Hefang/Controllers/HFSmallGalleryViewController.h; sourceTree = "<group>"; };
+		CDD1DEF21BDEC96300E95FAF /* HFSmallGalleryViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = HFSmallGalleryViewController.m; path = Hefang/Controllers/HFSmallGalleryViewController.m; sourceTree = "<group>"; };
+		CDD1DEFB1BDED12500E95FAF /* HFAccountAuthorization.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = HFAccountAuthorization.h; path = Helpers/HFAccountAuthorization.h; sourceTree = "<group>"; };
+		CDD1DEFC1BDED12500E95FAF /* HFAccountAuthorization.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = HFAccountAuthorization.m; path = Helpers/HFAccountAuthorization.m; sourceTree = "<group>"; };
+		CDD1DEFE1BDED14600E95FAF /* HFPhotoController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = HFPhotoController.h; path = Helpers/HFPhotoController.h; sourceTree = "<group>"; };
+		CDD1DEFF1BDED14600E95FAF /* HFPhotoController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = HFPhotoController.m; path = Helpers/HFPhotoController.m; sourceTree = "<group>"; };
+		CDD1DF041BDED23700E95FAF /* HFConstants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = HFConstants.h; path = Helpers/HFConstants.h; sourceTree = "<group>"; };
+		CDD1DF381BDF033800E95FAF /* HFSmallGalleryLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = HFSmallGalleryLayout.h; path = Views/HFSmallGalleryLayout.h; sourceTree = "<group>"; };
+		CDD1DF391BDF033800E95FAF /* HFSmallGalleryLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = HFSmallGalleryLayout.m; path = Views/HFSmallGalleryLayout.m; sourceTree = "<group>"; };
+		CDD1DF3B1BDF094700E95FAF /* HFSmallImageCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = HFSmallImageCell.h; path = Views/HFSmallImageCell.h; sourceTree = "<group>"; };
+		CDD1DF3C1BDF094700E95FAF /* HFSmallImageCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = HFSmallImageCell.m; path = Views/HFSmallImageCell.m; sourceTree = "<group>"; };
+		CDD1DF3E1BDF151C00E95FAF /* HFProfileViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = HFProfileViewController.h; path = Hefang/Controllers/HFProfileViewController.h; sourceTree = "<group>"; };
+		CDD1DF3F1BDF151C00E95FAF /* HFProfileViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = HFProfileViewController.m; path = Hefang/Controllers/HFProfileViewController.m; sourceTree = "<group>"; };
+		CDD1DF431BDF1B9100E95FAF /* HFProfileSmallImageLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = HFProfileSmallImageLayout.h; path = Views/HFProfileSmallImageLayout.h; sourceTree = "<group>"; };
+		CDD1DF441BDF1B9100E95FAF /* HFProfileSmallImageLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = HFProfileSmallImageLayout.m; path = Views/HFProfileSmallImageLayout.m; sourceTree = "<group>"; };
+		CDD1DF461BDF240300E95FAF /* HFProfileHeaderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = HFProfileHeaderView.h; path = Views/HFProfileHeaderView.h; sourceTree = "<group>"; };
+		CDD1DF471BDF240300E95FAF /* HFProfileHeaderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = HFProfileHeaderView.m; path = Views/HFProfileHeaderView.m; sourceTree = "<group>"; };
+		CDD1DF4C1BDF731100E95FAF /* HFLargeGalleryViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = HFLargeGalleryViewController.h; path = Hefang/Controllers/HFLargeGalleryViewController.h; sourceTree = "<group>"; };
+		CDD1DF4D1BDF731100E95FAF /* HFLargeGalleryViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = HFLargeGalleryViewController.m; path = Hefang/Controllers/HFLargeGalleryViewController.m; sourceTree = "<group>"; };
+		CDD1DF4F1BDF74D100E95FAF /* HFLargeImageCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = HFLargeImageCell.h; path = Views/HFLargeImageCell.h; sourceTree = "<group>"; };
+		CDD1DF501BDF74D100E95FAF /* HFLargeImageCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = HFLargeImageCell.m; path = Views/HFLargeImageCell.m; sourceTree = "<group>"; };
+		CDD1DF521BDF75CF00E95FAF /* HFLargeGalleryLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = HFLargeGalleryLayout.h; path = Views/HFLargeGalleryLayout.h; sourceTree = "<group>"; };
+		CDD1DF531BDF75CF00E95FAF /* HFLargeGalleryLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = HFLargeGalleryLayout.m; path = Views/HFLargeGalleryLayout.m; sourceTree = "<group>"; };
+		CDD1DF551BDF924B00E95FAF /* HFProfileLargeImageLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = HFProfileLargeImageLayout.h; path = Views/HFProfileLargeImageLayout.h; sourceTree = "<group>"; };
+		CDD1DF561BDF924B00E95FAF /* HFProfileLargeImageLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = HFProfileLargeImageLayout.m; path = Views/HFProfileLargeImageLayout.m; sourceTree = "<group>"; };
+		CDD1DF581BE077AE00E95FAF /* HFChangableImageCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = HFChangableImageCell.h; path = Views/HFChangableImageCell.h; sourceTree = "<group>"; };
+		CDD1DF591BE077AE00E95FAF /* HFChangableImageCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = HFChangableImageCell.m; path = Views/HFChangableImageCell.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		CD31B1781BDEAB7F00DA42EB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				152F03057176BD31D354AB0A /* libPods.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CD31B1911BDEAB8000DA42EB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CD31B19C1BDEAB8000DA42EB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		042CC7DBDB93976BB280244C /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				80E2A5B70CEBB880EE8AFE2A /* Pods.debug.xcconfig */,
+				19518A68231A3E7795D857A6 /* Pods.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		A1ACA2F915E1F909C1E46D12 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1D21ADD54FDD44F658D888E6 /* libPods.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		CD31B1721BDEAB7F00DA42EB = {
+			isa = PBXGroup;
+			children = (
+				CD31B1B11BDEB58600DA42EB /* Podfile */,
+				CD31B17D1BDEAB8000DA42EB /* Hefang */,
+				CD31B1971BDEAB8000DA42EB /* HefangTests */,
+				CD31B1A21BDEAB8000DA42EB /* HefangUITests */,
+				CD31B17C1BDEAB7F00DA42EB /* Products */,
+				042CC7DBDB93976BB280244C /* Pods */,
+				A1ACA2F915E1F909C1E46D12 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		CD31B17C1BDEAB7F00DA42EB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CD31B17B1BDEAB7F00DA42EB /* Hefang.app */,
+				CD31B1941BDEAB8000DA42EB /* HefangTests.xctest */,
+				CD31B19F1BDEAB8000DA42EB /* HefangUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CD31B17D1BDEAB8000DA42EB /* Hefang */ = {
+			isa = PBXGroup;
+			children = (
+				CD31B1B21BDEB79D00DA42EB /* Controllers */,
+				CD31B1B91BDEB9A800DA42EB /* Helpers */,
+				CDD1DEF51BDECE8D00E95FAF /* Views */,
+				CD31B1811BDEAB8000DA42EB /* HFAppDelegate.h */,
+				CD31B1821BDEAB8000DA42EB /* HFAppDelegate.m */,
+				CD31B1871BDEAB8000DA42EB /* Main.storyboard */,
+				CD31B18A1BDEAB8000DA42EB /* Assets.xcassets */,
+				CD31B18C1BDEAB8000DA42EB /* LaunchScreen.storyboard */,
+				CD31B18F1BDEAB8000DA42EB /* Info.plist */,
+				CD31B17E1BDEAB8000DA42EB /* Supporting Files */,
+			);
+			path = Hefang;
+			sourceTree = "<group>";
+		};
+		CD31B17E1BDEAB8000DA42EB /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				CD31B17F1BDEAB8000DA42EB /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		CD31B1971BDEAB8000DA42EB /* HefangTests */ = {
+			isa = PBXGroup;
+			children = (
+				CD31B1981BDEAB8000DA42EB /* HefangTests.m */,
+				CD31B19A1BDEAB8000DA42EB /* Info.plist */,
+			);
+			path = HefangTests;
+			sourceTree = "<group>";
+		};
+		CD31B1A21BDEAB8000DA42EB /* HefangUITests */ = {
+			isa = PBXGroup;
+			children = (
+				CD31B1A31BDEAB8000DA42EB /* HefangUITests.m */,
+				CD31B1A51BDEAB8000DA42EB /* Info.plist */,
+			);
+			path = HefangUITests;
+			sourceTree = "<group>";
+		};
+		CD31B1B21BDEB79D00DA42EB /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				CD31B1B61BDEB89500DA42EB /* HFLoginViewController.h */,
+				CD31B1B71BDEB89500DA42EB /* HFLoginViewController.m */,
+				CDD1DEEB1BDEC5D900E95FAF /* HFRootTabViewController.h */,
+				CDD1DEEC1BDEC5D900E95FAF /* HFRootTabViewController.m */,
+				CDD1DEF11BDEC96300E95FAF /* HFSmallGalleryViewController.h */,
+				CDD1DEF21BDEC96300E95FAF /* HFSmallGalleryViewController.m */,
+				CDD1DF4C1BDF731100E95FAF /* HFLargeGalleryViewController.h */,
+				CDD1DF4D1BDF731100E95FAF /* HFLargeGalleryViewController.m */,
+				CDD1DF3E1BDF151C00E95FAF /* HFProfileViewController.h */,
+				CDD1DF3F1BDF151C00E95FAF /* HFProfileViewController.m */,
+			);
+			name = Controllers;
+			path = ..;
+			sourceTree = "<group>";
+		};
+		CD31B1B91BDEB9A800DA42EB /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				CDD1DEFB1BDED12500E95FAF /* HFAccountAuthorization.h */,
+				CDD1DEFC1BDED12500E95FAF /* HFAccountAuthorization.m */,
+				CDD1DEFE1BDED14600E95FAF /* HFPhotoController.h */,
+				CDD1DEFF1BDED14600E95FAF /* HFPhotoController.m */,
+			);
+			name = Helpers;
+			sourceTree = "<group>";
+		};
+		CDD1DEF51BDECE8D00E95FAF /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				CDD1DF041BDED23700E95FAF /* HFConstants.h */,
+				CDD1DF3B1BDF094700E95FAF /* HFSmallImageCell.h */,
+				CDD1DF3C1BDF094700E95FAF /* HFSmallImageCell.m */,
+				CDD1DF4F1BDF74D100E95FAF /* HFLargeImageCell.h */,
+				CDD1DF501BDF74D100E95FAF /* HFLargeImageCell.m */,
+				CDD1DF581BE077AE00E95FAF /* HFChangableImageCell.h */,
+				CDD1DF591BE077AE00E95FAF /* HFChangableImageCell.m */,
+				CDD1DF381BDF033800E95FAF /* HFSmallGalleryLayout.h */,
+				CDD1DF391BDF033800E95FAF /* HFSmallGalleryLayout.m */,
+				CDD1DF521BDF75CF00E95FAF /* HFLargeGalleryLayout.h */,
+				CDD1DF531BDF75CF00E95FAF /* HFLargeGalleryLayout.m */,
+				CDD1DF431BDF1B9100E95FAF /* HFProfileSmallImageLayout.h */,
+				CDD1DF441BDF1B9100E95FAF /* HFProfileSmallImageLayout.m */,
+				CDD1DF551BDF924B00E95FAF /* HFProfileLargeImageLayout.h */,
+				CDD1DF561BDF924B00E95FAF /* HFProfileLargeImageLayout.m */,
+				CDD1DF461BDF240300E95FAF /* HFProfileHeaderView.h */,
+				CDD1DF471BDF240300E95FAF /* HFProfileHeaderView.m */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		CD31B17A1BDEAB7F00DA42EB /* Hefang */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CD31B1A81BDEAB8000DA42EB /* Build configuration list for PBXNativeTarget "Hefang" */;
+			buildPhases = (
+				C73398F34D761FF0745847B0 /* Check Pods Manifest.lock */,
+				CD31B1771BDEAB7F00DA42EB /* Sources */,
+				CD31B1781BDEAB7F00DA42EB /* Frameworks */,
+				CD31B1791BDEAB7F00DA42EB /* Resources */,
+				E5E58C14EC33FF217E3CEA5A /* Embed Pods Frameworks */,
+				EC7DE5632B509247FE1F6F06 /* Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Hefang;
+			productName = Hefang;
+			productReference = CD31B17B1BDEAB7F00DA42EB /* Hefang.app */;
+			productType = "com.apple.product-type.application";
+		};
+		CD31B1931BDEAB8000DA42EB /* HefangTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CD31B1AB1BDEAB8000DA42EB /* Build configuration list for PBXNativeTarget "HefangTests" */;
+			buildPhases = (
+				CD31B1901BDEAB8000DA42EB /* Sources */,
+				CD31B1911BDEAB8000DA42EB /* Frameworks */,
+				CD31B1921BDEAB8000DA42EB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CD31B1961BDEAB8000DA42EB /* PBXTargetDependency */,
+			);
+			name = HefangTests;
+			productName = HefangTests;
+			productReference = CD31B1941BDEAB8000DA42EB /* HefangTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		CD31B19E1BDEAB8000DA42EB /* HefangUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CD31B1AE1BDEAB8000DA42EB /* Build configuration list for PBXNativeTarget "HefangUITests" */;
+			buildPhases = (
+				CD31B19B1BDEAB8000DA42EB /* Sources */,
+				CD31B19C1BDEAB8000DA42EB /* Frameworks */,
+				CD31B19D1BDEAB8000DA42EB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CD31B1A11BDEAB8000DA42EB /* PBXTargetDependency */,
+			);
+			name = HefangUITests;
+			productName = HefangUITests;
+			productReference = CD31B19F1BDEAB8000DA42EB /* HefangUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		CD31B1731BDEAB7F00DA42EB /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0700;
+				ORGANIZATIONNAME = "Hefang Li";
+				TargetAttributes = {
+					CD31B17A1BDEAB7F00DA42EB = {
+						CreatedOnToolsVersion = 7.0.1;
+						DevelopmentTeam = K2Z953X8R5;
+					};
+					CD31B1931BDEAB8000DA42EB = {
+						CreatedOnToolsVersion = 7.0.1;
+						TestTargetID = CD31B17A1BDEAB7F00DA42EB;
+					};
+					CD31B19E1BDEAB8000DA42EB = {
+						CreatedOnToolsVersion = 7.0.1;
+						TestTargetID = CD31B17A1BDEAB7F00DA42EB;
+					};
+				};
+			};
+			buildConfigurationList = CD31B1761BDEAB7F00DA42EB /* Build configuration list for PBXProject "Hefang" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = CD31B1721BDEAB7F00DA42EB;
+			productRefGroup = CD31B17C1BDEAB7F00DA42EB /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				CD31B17A1BDEAB7F00DA42EB /* Hefang */,
+				CD31B1931BDEAB8000DA42EB /* HefangTests */,
+				CD31B19E1BDEAB8000DA42EB /* HefangUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		CD31B1791BDEAB7F00DA42EB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CD31B18E1BDEAB8000DA42EB /* LaunchScreen.storyboard in Resources */,
+				CD31B18B1BDEAB8000DA42EB /* Assets.xcassets in Resources */,
+				CD31B1891BDEAB8000DA42EB /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CD31B1921BDEAB8000DA42EB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CD31B19D1BDEAB8000DA42EB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		C73398F34D761FF0745847B0 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		E5E58C14EC33FF217E3CEA5A /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EC7DE5632B509247FE1F6F06 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		CD31B1771BDEAB7F00DA42EB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CDD1DF511BDF74D100E95FAF /* HFLargeImageCell.m in Sources */,
+				CD31B1B81BDEB89500DA42EB /* HFLoginViewController.m in Sources */,
+				CDD1DF4E1BDF731100E95FAF /* HFLargeGalleryViewController.m in Sources */,
+				CD31B1831BDEAB8000DA42EB /* HFAppDelegate.m in Sources */,
+				CD31B1801BDEAB8000DA42EB /* main.m in Sources */,
+				CDD1DF5A1BE077AE00E95FAF /* HFChangableImageCell.m in Sources */,
+				CDD1DF401BDF151C00E95FAF /* HFProfileViewController.m in Sources */,
+				CDD1DF481BDF240300E95FAF /* HFProfileHeaderView.m in Sources */,
+				CDD1DEED1BDEC5D900E95FAF /* HFRootTabViewController.m in Sources */,
+				CDD1DEF31BDEC96300E95FAF /* HFSmallGalleryViewController.m in Sources */,
+				CDD1DF001BDED14600E95FAF /* HFPhotoController.m in Sources */,
+				CDD1DF051BDED23700E95FAF /* HFConstants.h in Sources */,
+				CDD1DF3D1BDF094700E95FAF /* HFSmallImageCell.m in Sources */,
+				CDD1DF451BDF1B9100E95FAF /* HFProfileSmallImageLayout.m in Sources */,
+				CDD1DF3A1BDF033800E95FAF /* HFSmallGalleryLayout.m in Sources */,
+				CDD1DF541BDF75CF00E95FAF /* HFLargeGalleryLayout.m in Sources */,
+				CDD1DEFD1BDED12500E95FAF /* HFAccountAuthorization.m in Sources */,
+				CDD1DF571BDF924B00E95FAF /* HFProfileLargeImageLayout.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CD31B1901BDEAB8000DA42EB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CD31B1991BDEAB8000DA42EB /* HefangTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CD31B19B1BDEAB8000DA42EB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CD31B1A41BDEAB8000DA42EB /* HefangUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		CD31B1961BDEAB8000DA42EB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CD31B17A1BDEAB7F00DA42EB /* Hefang */;
+			targetProxy = CD31B1951BDEAB8000DA42EB /* PBXContainerItemProxy */;
+		};
+		CD31B1A11BDEAB8000DA42EB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CD31B17A1BDEAB7F00DA42EB /* Hefang */;
+			targetProxy = CD31B1A01BDEAB8000DA42EB /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		CD31B1871BDEAB8000DA42EB /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CD31B1881BDEAB8000DA42EB /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		CD31B18C1BDEAB8000DA42EB /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CD31B18D1BDEAB8000DA42EB /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		CD31B1A61BDEAB8000DA42EB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		CD31B1A71BDEAB8000DA42EB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		CD31B1A91BDEAB8000DA42EB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 80E2A5B70CEBB880EE8AFE2A /* Pods.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				INFOPLIST_FILE = Hefang/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.instagram.Hefang;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		CD31B1AA1BDEAB8000DA42EB /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 19518A68231A3E7795D857A6 /* Pods.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				INFOPLIST_FILE = Hefang/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.instagram.Hefang;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		CD31B1AC1BDEAB8000DA42EB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = HefangTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.instagram.HefangTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Hefang.app/Hefang";
+			};
+			name = Debug;
+		};
+		CD31B1AD1BDEAB8000DA42EB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = HefangTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.instagram.HefangTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Hefang.app/Hefang";
+			};
+			name = Release;
+		};
+		CD31B1AF1BDEAB8000DA42EB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = HefangUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.instagram.HefangUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = Hefang;
+				USES_XCTRUNNER = YES;
+			};
+			name = Debug;
+		};
+		CD31B1B01BDEAB8000DA42EB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = HefangUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.instagram.HefangUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = Hefang;
+				USES_XCTRUNNER = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		CD31B1761BDEAB7F00DA42EB /* Build configuration list for PBXProject "Hefang" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CD31B1A61BDEAB8000DA42EB /* Debug */,
+				CD31B1A71BDEAB8000DA42EB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CD31B1A81BDEAB8000DA42EB /* Build configuration list for PBXNativeTarget "Hefang" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CD31B1A91BDEAB8000DA42EB /* Debug */,
+				CD31B1AA1BDEAB8000DA42EB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CD31B1AB1BDEAB8000DA42EB /* Build configuration list for PBXNativeTarget "HefangTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CD31B1AC1BDEAB8000DA42EB /* Debug */,
+				CD31B1AD1BDEAB8000DA42EB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CD31B1AE1BDEAB8000DA42EB /* Build configuration list for PBXNativeTarget "HefangUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CD31B1AF1BDEAB8000DA42EB /* Debug */,
+				CD31B1B01BDEAB8000DA42EB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = CD31B1731BDEAB7F00DA42EB /* Project object */;
+}
